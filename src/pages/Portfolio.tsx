@@ -114,7 +114,7 @@ const Timeline = () => {
     {
       date: "May 2023",
       title: "Bachelor's in Entrepreneurial Leadership",
-      description: "Graduated from The African Leadership University",
+      description: "I have started my bachelor's degree at The African Leadership University",
       icon: Target,
       color: "orange"
     },
@@ -174,7 +174,7 @@ const Timeline = () => {
                 <div className={`p-5 md:p-8 bg-white rounded-[15px_8px_15px_8px] md:rounded-[25px_10px_25px_10px] shadow-lg md:shadow-xl hover:shadow-xl md:hover:shadow-2xl transition-shadow duration-500 border border-gray-100 ${
                   isLeft ? 'mr-4 md:mr-8' : 'ml-4 md:ml-8'
                 }`}>
-                  <div className={`inline-flex items-center px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium bg-${event.color}-100 text-${event.color}-700 mb-3 md:mb-4`}>
+                  <div className={`inline-flex items-center px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium bg-${event.color}-300 text-${event.color}-700 mb-3 md:mb-4`}>
                     <Calendar className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
                     {event.date}
                   </div>

@@ -59,10 +59,10 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center min-h-[80vh]">
             {/* Image Section with irregular shape */}
-            <div className="w-full lg:w-1/2 mb-8 md:mb-12 lg:mb-0 mt-12 md:mt-16 lg:mt-21 flex justify-center lg:justify-start">
+            <div className="w-full lg:w-1/2 mb-8 md:mb-12 lg:mb-0 mt-12 md:mt-21 lg:mt-21 flex justify-center lg:justify-start">
             <div className="relative group w-full max-w-sm md:max-w-md lg:max-w-lg">
                 {/* Main image container with irregular shape */}
-                <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-120 mx-auto transform transition-all duration-700 hover:scale-105 hover:rotate-2">
+                <div className="relative w-full h-90 sm:h-80 md:h-96 lg:h-120 mx-auto transform transition-all duration-700 hover:scale-105 hover:rotate-2">
                 {/* Irregular background shape */}
                 <div className="absolute inset-0 bg-gradient-to-br from-green-500 via-green-600 to-teal-500 rounded-[30px_15px_50px_20px] sm:rounded-[40px_18px_60px_25px] lg:rounded-[50px_20px_80px_30px] transform rotate-3 sm:rotate-4 lg:rotate-6 group-hover:rotate-6 sm:group-hover:rotate-8 lg:group-hover:rotate-12 transition-transform duration-700"></div>
                 
@@ -75,7 +75,7 @@ const Home = () => {
                     <img 
                         src="/sonia (2).jpeg" 
                         alt="Profile" 
-                        className="object-cover py-10 w-100 h-150"
+                        className="object-cover lg:w-full lg:h-full md:w-fit md:h-fit sm:w-fit sm:h-fit"
                     />
                     
                     {/* Floating elements around image */}
@@ -177,7 +177,7 @@ const Home = () => {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p className="transform hover:scale-105 transition-transform duration-300 p-6 bg-gradient-to-r from-green-50 to-indigo-50 rounded-2xl border border-green-100">
-                  I am a passionate entrepreneurial leader with a Bachelor's degree in Entrepreneurial Leadership 
+                  I am a passionate entrepreneurial leader persuing Bachelor's degree in Entrepreneurial Leadership 
                   from the African Leadership University. My professional journey has spanned finance, operations, 
                   and social impact initiatives, with a focus on creating sustainable solutions for African communities.
                 </p>
