@@ -79,10 +79,10 @@ const Home = () => {
                     />
                     
                     {/* Floating elements around image */}
-                    <div className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 lg:-top-4 lg:-right-4 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-yellow-400 rounded-full flex items-center justify-center animate-pulse">
+                    <div className="absolute -top-2 -right-2 sm:-top-8 mt-8 mr-6 sm:-right-3 lg:-top-4 lg:-right-4 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-yellow-400 rounded-full flex items-center justify-center animate-pulse">
                         <Star className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-white" />
                     </div>
-                    <div className="absolute -bottom-1 -left-1 sm:-bottom-2 sm:-left-2 lg:-bottom-2 lg:-left-2 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 bg-green-400 rounded-full animate-bounce delay-500"></div>
+                    <div className="absolute -bottom-1 -left-1 sm:-bottom-2 sm:-left-2 lg:-bottom-6 lg:-left-0 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 bg-green-400 rounded-full animate-bounce delay-500"></div>
                     </div>
                 </div>
                 </div>
@@ -195,7 +195,7 @@ const Home = () => {
               
               {/* Animated stats with cycling display */}
               <div className="space-y-8">
-                <div className="grid grid-cols-1 gap-6">
+                <div className="grid grid-cols-1 px-4 gap-6">
                   {stats.map((stat, index) => {
                     const Icon = stat.icon;
                     const isActive = currentStat === index;
