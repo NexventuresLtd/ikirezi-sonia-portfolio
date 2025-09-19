@@ -59,45 +59,49 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center min-h-[80vh]">
             {/* Image Section with irregular shape */}
-            <div className="lg:w-1/2 mb-16 mt-21 lg:mb-0 flex justify-center lg:justify-start">
-              <div className="relative group">
+            <div className="w-full lg:w-1/2 mb-8 md:mb-12 lg:mb-0 mt-12 md:mt-16 lg:mt-21 flex justify-center lg:justify-start">
+            <div className="relative group w-full max-w-sm md:max-w-md lg:max-w-lg">
                 {/* Main image container with irregular shape */}
-                <div className="relative w-100 h-120  transform transition-all duration-700 hover:scale-105 hover:rotate-2">
-                  {/* Irregular background shape */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-500 via-green-600 to-teal-500 rounded-[50px_20px_80px_30px] transform rotate-6 group-hover:rotate-12 transition-transform duration-700"></div>
-                  
-                  {/* Secondary shape for depth */}
-                  <div className="absolute inset-4 bg-gradient-to-tr from-pink-400 to-orange-400 rounded-[30px_60px_40px_70px] transform -rotate-3 group-hover:-rotate-6 transition-transform duration-700 opacity-80"></div>
-                  
-                  {/* Image container */}
-                  <div className="absolute inset-8 bg-white rounded-[40px_25px_60px_35px] overflow-hidden shadow-2xl">
-                    <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center relative">
-                      <img src="/sonia (2).jpeg" alt="" />
-                      
-                      {/* Floating elements around image */}
-                      <div className="absolute -top-4 -right-4 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center animate-pulse">
-                        <Star className="h-6 w-6 text-white" />
-                      </div>
-                      <div className="absolute -bottom-2 -left-2 w-8 h-8 bg-green-400 rounded-full animate-bounce delay-500"></div>
+                <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-120 mx-auto transform transition-all duration-700 hover:scale-105 hover:rotate-2">
+                {/* Irregular background shape */}
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500 via-green-600 to-teal-500 rounded-[30px_15px_50px_20px] sm:rounded-[40px_18px_60px_25px] lg:rounded-[50px_20px_80px_30px] transform rotate-3 sm:rotate-4 lg:rotate-6 group-hover:rotate-6 sm:group-hover:rotate-8 lg:group-hover:rotate-12 transition-transform duration-700"></div>
+                
+                {/* Secondary shape for depth */}
+                <div className="absolute inset-2 sm:inset-3 lg:inset-4 bg-gradient-to-tr from-pink-400 to-orange-400 rounded-[20px_40px_25px_50px] sm:rounded-[25px_50px_30px_60px] lg:rounded-[30px_60px_40px_70px] transform -rotate-2 sm:-rotate-2 lg:-rotate-3 group-hover:-rotate-3 sm:group-hover:-rotate-4 lg:group-hover:-rotate-6 transition-transform duration-700 opacity-80"></div>
+                
+                {/* Image container */}
+                <div className="absolute inset-3 sm:inset-5 lg:inset-8 bg-white rounded-[25px_15px_40px_20px] sm:rounded-[30px_20px_50px_25px] lg:rounded-[40px_25px_60px_35px] overflow-hidden shadow-xl sm:shadow-2xl">
+                    <div className="w-full h-full bg-gradient-to-br from-slate-400 to-gray-300 flex items-center justify-center relative">
+                    <img 
+                        src="/sonia (2).jpeg" 
+                        alt="Profile" 
+                        className="object-cover py-10 w-100 h-150"
+                    />
+                    
+                    {/* Floating elements around image */}
+                    <div className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 lg:-top-4 lg:-right-4 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-yellow-400 rounded-full flex items-center justify-center animate-pulse">
+                        <Star className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-white" />
                     </div>
-                  </div>
+                    <div className="absolute -bottom-1 -left-1 sm:-bottom-2 sm:-left-2 lg:-bottom-2 lg:-left-2 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 bg-green-400 rounded-full animate-bounce delay-500"></div>
+                    </div>
+                </div>
                 </div>
                 
                 {/* Floating achievement badges */}
-                <div className="absolute -top-8 -left-8 bg-white rounded-2xl shadow-lg p-3 animate-float">
-                  <div className="flex items-center gap-2">
-                    <Award className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-semibold text-gray-700">Finance Leader</span>
-                  </div>
+                <div className="absolute -top-6 -left-4 sm:-top-7 sm:-left-6 lg:-top-8 lg:-left-8 bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg p-2 sm:p-3 animate-float">
+                <div className="flex items-center gap-1 sm:gap-2">
+                    <Award className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-500" />
+                    <span className="text-xs sm:text-sm font-semibold text-gray-700">Finance Leader</span>
+                </div>
                 </div>
                 
-                <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-lg p-3 animate-float delay-1000">
-                  <div className="flex items-center gap-2">
-                    <Users className="h-5 w-5 text-green-500" />
-                    <span className="text-sm font-semibold text-gray-700">Impact Maker</span>
-                  </div>
+                <div className="absolute -bottom-4 -right-4 sm:-bottom-5 sm:-right-5 lg:-bottom-6 lg:-right-6 bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg p-2 sm:p-3 animate-float delay-1000">
+                <div className="flex items-center gap-1 sm:gap-2">
+                    <Users className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
+                    <span className="text-xs sm:text-sm font-semibold text-gray-700">Impact Maker</span>
                 </div>
-              </div>
+                </div>
+            </div>
             </div>
             
             {/* Content Section */}
