@@ -62,7 +62,7 @@ const Home = () => {
             <div className="lg:w-1/2 mb-16 mt-21 lg:mb-0 flex justify-center lg:justify-start">
               <div className="relative group">
                 {/* Main image container with irregular shape */}
-                <div className="relative w-120 h-140  transform transition-all duration-700 hover:scale-105 hover:rotate-2">
+                <div className="relative w-100 h-120  transform transition-all duration-700 hover:scale-105 hover:rotate-2">
                   {/* Irregular background shape */}
                   <div className="absolute inset-0 bg-gradient-to-br from-green-500 via-green-600 to-teal-500 rounded-[50px_20px_80px_30px] transform rotate-6 group-hover:rotate-12 transition-transform duration-700"></div>
                   
